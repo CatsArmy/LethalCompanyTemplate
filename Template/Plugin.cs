@@ -1,10 +1,11 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
+using CatsArmy.patch;
+using CatsArmy.service;
 using HarmonyLib;
-using YourThunderstoreTeam.patch;
-using YourThunderstoreTeam.service;
+using UnityEngine;
 
-namespace YourThunderstoreTeam;
+namespace CatsArmy;
 
 [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
 public class Plugin : BaseUnityPlugin
@@ -13,7 +14,8 @@ public class Plugin : BaseUnityPlugin
 
     public static ManualLogSource Log => Instance.Logger;
 
-    private readonly Harmony _harmony = new(PluginInfo.PLUGIN_GUID);
+    private readonly Harmony harmony = new(PluginInfo.PLUGIN_GUID);
+    private const GameObject Object = null;
 
     public TemplateService Service;
 
@@ -29,6 +31,10 @@ public class Plugin : BaseUnityPlugin
         Log.LogInfo($"Applying patches...");
         ApplyPluginPatch();
         Log.LogInfo($"Patches applied");
+        if (Object.activeSelf)
+        {
+
+        }
     }
 
     /// <summary>
@@ -36,7 +42,7 @@ public class Plugin : BaseUnityPlugin
     /// </summary>
     private void ApplyPluginPatch()
     {
-        _harmony.PatchAll(typeof(ShipLightsPatch));
-        _harmony.PatchAll(typeof(PlayerControllerBPatch));
+        harmony.PatchAll(typeof(ShipLightsPatch));
+        harmony.PatchAll(typeof(PlayerControllerBPatch));
     }
 }
