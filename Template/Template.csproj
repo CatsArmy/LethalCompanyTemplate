@@ -1,7 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <Import Project="..\Common.props" />
-    <!--<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />-->
 
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
@@ -45,7 +44,7 @@
             <ReferenceCopyLocalPaths Remove="@(ReferenceCopyLocalPaths)" />
         </ItemGroup>
     </Target>
-
+    
     <!-- Move the plugin to the game's plugin directory and start the game to test it -->
     <Target Condition="'$(CI)' != 'true' And $(StartGame)" Name="StartGame" AfterTargets="PostBuildEvent">
         <!-- Create a temporary copy of the plugin in the target directory -->

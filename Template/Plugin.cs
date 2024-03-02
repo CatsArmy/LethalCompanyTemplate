@@ -1,9 +1,10 @@
-﻿using BepInEx;
+﻿global using System;
+global using UnityEngine;
+using BepInEx;
 using BepInEx.Logging;
 using CatsArmy.patch;
 using CatsArmy.service;
 using HarmonyLib;
-using UnityEngine;
 
 namespace CatsArmy;
 
@@ -15,7 +16,6 @@ public class Plugin : BaseUnityPlugin
     public static ManualLogSource Log => Instance.Logger;
 
     private readonly Harmony harmony = new(PluginInfo.PLUGIN_GUID);
-    private const GameObject Object = null;
 
     public TemplateService Service;
 
@@ -31,10 +31,6 @@ public class Plugin : BaseUnityPlugin
         Log.LogInfo($"Applying patches...");
         ApplyPluginPatch();
         Log.LogInfo($"Patches applied");
-        if (Object.activeSelf)
-        {
-
-        }
     }
 
     /// <summary>
