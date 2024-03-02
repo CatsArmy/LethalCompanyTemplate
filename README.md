@@ -1,6 +1,6 @@
 # LethalCompanyTemplate
 
-[![](https://img.shields.io/badge/YourThunderstoreTeam-Template-blue?logo=thunderstore)](https://thunderstore.io/c/lethal-company/p/YourThunderstoreTeam/Template/)
+[![](https://img.shields.io/badge/CatsArmy-Template-blue?logo=thunderstore)](https://thunderstore.io/c/lethal-company/p/CatsArmy/Template/)
 
 Template to create Lethal Company plugins.
 

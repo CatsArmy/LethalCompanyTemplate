@@ -5,10 +5,12 @@ schemaVersion = "0.0.1"
 repository = "https://thunderstore.io"
 
 [package]
-namespace = "YourThunderstoreTeam"
+namespace = "CatsArmy"
+# TODO On templating this change these to the new name
 name = "Template"
 description = "A template for Lethal Company plugins."
-websiteUrl = "https://github.com/Distractic/LethalCompanyTemplate"
+# TODO On templating this change these to the new name
+websiteUrl = "https://github.com/CatsArmy/LethalCompanyTemplate"
 containsNsfwContent = false
 
 [package.dependencies]
@@ -20,6 +22,7 @@ icon = "icon.png"
 readme = "README.md"
 outdir = "build"
 
+# TODO On templating this change these to the new name
 [[build.copy]]
 source = "Template/bin/Template.dll"
 target = "BepInEx/plugins/Template.dll"
