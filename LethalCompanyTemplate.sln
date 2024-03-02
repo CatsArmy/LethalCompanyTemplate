@@ -7,6 +7,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template", "Template\Templa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{CF5E8FBA-B7B1-4EBA-A3D9-F3AFBE869CB1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5B71689A-1E1D-4E54-91D6-F61A3689DA31}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		CHANGELOG.md = CHANGELOG.md
+		Common.props = Common.props
+		CONTRIBUTING.md = CONTRIBUTING.md
+		icon.png = icon.png
+		README.md = README.md
+		thunderstore.toml = thunderstore.toml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		BuildThunderstorePackage|Any CPU = BuildThunderstorePackage|Any CPU
