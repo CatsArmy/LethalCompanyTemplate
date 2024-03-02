@@ -21,7 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <!--Change this when using template and renaming-->
+        <!--TODO Change this when using template and renaming-->
         <ProjectReference Include="..\Template\Template.csproj" />
     </ItemGroup>
 </Project>
