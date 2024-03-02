@@ -1,6 +1,4 @@
-﻿global using System;
-global using UnityEngine;
-using BepInEx;
+﻿using BepInEx;
 using BepInEx.Logging;
 using CatsArmy.patch;
 using CatsArmy.service;
